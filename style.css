@@ -1,11 +1,68 @@
 #movie-backdrop {
     width: 100%;
-}
-
-.container {
+  }
+  
+  .container {
     padding-top: 32px;
-}
+    display: grid;
+    grid-template-columns: auto auto auto; 
+    gap: 10px; 
+  }
 
-#actors {
+  /* .container div{
+    width: 5rem;
+  } */
+  
+  /* #actors {
     margin: 24px 16px 0 0;
-}
+  } */
+  
+  .actor-image {
+    /* border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    overflow: hidden; */
+
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  
+  .actor-image img {
+    /* object-fit: contain; */
+    width: 100%; height: 100%;
+    object-fit: cover;
+    /* margin-left: -50px; */
+  }
+
+  
+  .actor-page{
+    padding-left: 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px
+  }
+
+  .movie-div{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    
+  }
+  .movie-div img{
+    
+    width: 100%;
+    border-radius: 5%;
+    
+  }
+  .rating {
+    margin-top: -150px;
+    margin-right: 200px;
+  }
+
